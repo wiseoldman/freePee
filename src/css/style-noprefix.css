@@ -80,6 +80,11 @@ input[type="radio"]:checked + label {
     font-weight: 700;
 }
 
+input[type="checkbox"] + label:hover,
+input[type="radio"] + label:hover {
+    color: #0a84a4;
+}
+
 .hr {
     height: 1px;
     width: 100%;
