@@ -80,6 +80,8 @@ input[type="radio"] {
 input[type="checkbox"] + label,
 input[type="radio"] + label {
     cursor: pointer;
+    width: 100%;
+    display: block;
 }
 
 input[type="checkbox"]:checked + label,
