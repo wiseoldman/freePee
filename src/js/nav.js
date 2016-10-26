@@ -12,12 +12,9 @@ jQuery(document).ready(function($) {
 
     $(window).resize(function() {
         if ($(window).width() > 780) {
-            if ($('nav').css('display', 'none')) {
-                $('nav').css('display', '');
-            } else if ($('nav').css('padding-top', headerHeight)) {
-                $('nav').css('padding-top', '');
-            }
-            $('nav').css('height', '100%');            
+            $('nav').css('display', '');
+            $('nav').css('padding-top', '');
+            $('nav').css('height', '100%');
         }
     });
 });
