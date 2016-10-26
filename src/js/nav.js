@@ -5,9 +5,9 @@ jQuery(document).ready(function($) {
     var headerHeight = $('header').outerHeight();
 
     $('.toggle-nav-mobile').click(function () {
-        $('nav').css('top', headerHeight);
-        $('nav').stop().slideToggle();
+        $('nav').css('padding-top', headerHeight);
         //$('body').toggleClass('no-scroll');
+        $('nav').stop().slideToggle();
         $('.toggle-nav-mobile').toggleClass('is-open');
     });
 
