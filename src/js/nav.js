@@ -11,9 +11,10 @@ jQuery(document).ready(function($) {
     });
 
     $(window).resize(function() {
-        if ($(window).width() > 780 && $('nav').css('display') === 'none') {
+        if ($(window).width() > 780 && $('nav').css('display') === 'none' || $('nav').css('top', headerHeight)) {
             $('nav').css('display', '');
             $('nav').css('top', '');
+            $('nav').css('height', '100%');
         }
     });
 });
