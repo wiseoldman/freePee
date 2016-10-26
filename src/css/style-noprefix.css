@@ -2,6 +2,7 @@
 ** freePee CSS
 */
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Passion+One:400');
 
 * {
     margin: 0;
@@ -26,10 +27,12 @@ body {
 }
 
 header {
-    background: #0a84a4;
-    color: white;
-    font-size: 1.4em;
+    background: #05b1be;
     padding: 12px 18px;
+    color: white;
+    font-family: 'Passion One', 'cursive';
+    font-size: 1.9em;
+    text-align: center;
 }
 
 nav {
@@ -76,13 +79,13 @@ input[type="radio"] + label {
 
 input[type="checkbox"]:checked + label,
 input[type="radio"]:checked + label {
-    color: #0a84a4;
+    color: #05b1be;
     font-weight: 700;
 }
 
 input[type="checkbox"] + label:hover,
 input[type="radio"] + label:hover {
-    color: #0a84a4;
+    color: #05b1be;
 }
 
 .hr {
@@ -90,6 +93,59 @@ input[type="radio"] + label:hover {
     width: 100%;
     background: grey;
 }
+
+/* NAV BURGER */
+
+header .toggle-nav-mobile {
+    display: none;
+    float: right;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .toggle-nav-mobile span,
+header .toggle-nav-mobile span:before,
+header .toggle-nav-mobile span:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+header .toggle-nav-mobile span:before {
+    top: 9px;
+}
+
+header .toggle-nav-mobile span:after {
+    top: -12px;
+}
+
+
+/* X INSTEAD OF LINES */
+
+header .toggle-nav-mobile.is-open span:before {
+    transform-origin: center;
+    transform: rotate(45deg);
+    top: 0;
+}
+
+header .toggle-nav-mobile.is-open span:after {
+    top: -2px;
+    transform: rotate(-45deg);
+}
+
+header .toggle-nav-mobile.is-open span {
+    background: transparent;
+}
+
+/*
+** MEDIA QUERIES
+*/
 
 @media (max-width: 780px) {
     nav {
@@ -99,6 +155,14 @@ input[type="radio"] + label:hover {
         left: 0;
         width: 100%;
         height: 100%;
+    }
+
+    header .toggle-nav-mobile {
+        display: flex;
+    }
+
+    header {
+        text-align: left;
     }
 }
 
