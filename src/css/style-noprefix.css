@@ -13,6 +13,10 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 .wrapper {
     display: flex;
     height: 100vh;
