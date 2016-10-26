@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
     $('.toggle-nav-mobile').click(function () {
         $('nav').css('top', headerHeight);
         $('nav').stop().slideToggle();
-        $('body').toggleClass('no-scroll');
+        //$('body').toggleClass('no-scroll');
         $('.toggle-nav-mobile').toggleClass('is-open');
     });
 
@@ -16,9 +16,9 @@ jQuery(document).ready(function($) {
             $('nav').css('display', '');
             $('nav').css('top', '');
             $('nav').css('height', '100%');
-            if ($('body').hasClass('no-scroll')) {
+            /*if ($('body').hasClass('no-scroll')) {
                 $('body').toggleClass('no-scroll');
-            }
+            }*/
         }
     });
 });
