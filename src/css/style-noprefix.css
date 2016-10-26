@@ -37,6 +37,7 @@ header {
     font-family: 'Passion One', 'cursive';
     font-size: 1.9em;
     text-align: center;
+    z-index: 200;
 }
 
 nav {
@@ -45,6 +46,7 @@ nav {
     min-width: 200px;
     padding: 18px;
     overflow: auto;
+    z-index: 100;
 }
 
 nav ul li {
@@ -154,7 +156,7 @@ header .toggle-nav-mobile.is-open span {
 @media (max-width: 780px) {
     nav {
         display: none;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
