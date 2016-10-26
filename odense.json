@@ -1,0 +1,78 @@
+{
+    "city": "Odense",
+    "totalToilets": 6,
+    "toilets": [
+        {
+            "id": "odense-1",
+            "coordinates": [
+                55.408365,
+                10.378135
+            ],
+            "address": "Østersøgade 8T",
+            "type": "Toilet",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000",
+        },
+        {
+            "id": "odense-2",
+            "coordinates": [
+                55.407162,
+                10.382829
+            ],
+            "address": "Gamle Havnekaj 1",
+            "type": "Toilet",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000",
+        },
+        {
+            "id": "odense-3",
+            "coordinates": [
+                55.406912,
+                10.383065
+            ],
+            "address": "Gamle Havnekaj 1",
+            "type": "Handicap",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000",
+        },
+        {
+            "id": "odense-4",
+            "coordinates": [
+                55.403351,
+                10.387303
+            ],
+            "address": "Dannebrogsgade 5",
+            "type": "Toilet",
+            "opening_hours": "Hele dagen",
+            "price": "5",
+            "postal_code": "5000",
+        },
+        {
+            "id": "odense-5",
+            "coordinates": [
+                55.402008,
+                10.387170
+            ],
+            "address": "Dannebrogsgade 6B",
+            "type": "Toilet",
+            "opening_hours": "5:00-1:15",
+            "price": "2",
+            "postal_code": "5000",
+        },
+        {
+            "id": "odense-6",
+            "coordinates": [
+                55.399277,
+                10.388873
+            ],
+            "address": "Nørregade 49B",
+            "type": "Pissoir",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000",
+        }
+    ]
+}
