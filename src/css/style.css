@@ -71,12 +71,14 @@ nav ul li a {
     color: black;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
     float: right;
     margin-top: 5px;
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
     cursor: pointer;
 }
 
