@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da" ng-app>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,20 +81,8 @@
                             Vælg radius
                         </li>
                         <li>
-                            <input type="radio" name="name" id="r1" checked>
-                            <label for="r1">0-2 km</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="name" id="r2">
-                            <label for="r2">2-5 km</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="name" id="r3">
-                            <label for="r3">5-10 km</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="name" id="r4">
-                            <label for="r4">Overalt</label>
+                            <input type="range" ng-model="sliderVal" value="2" min="1" max="10" style="width: 100%">
+                            <span style="display: block">Radius: {{sliderVal}} km</span>
                         </li>
                     </ul>
                 </nav>
