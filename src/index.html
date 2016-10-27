@@ -6,9 +6,9 @@
 
         <title>freePee | pee for free</title>
 
-        <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+        <link rel="stylesheet" href="css/style-noprefix.css" media="screen" title="no title">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>        
     </head>
     <body class="no-scroll">
         <!-- Page wrapper -->
@@ -30,36 +30,52 @@
                             Vælg toilet type
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb1" checked>
-                            <label for="cb1">Toiletter</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch"></label>
+                            </div>
+                            <span class="checked-text">Toiletter</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb2" checked>
-                            <label for="cb2">Handicap</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch2"></label>
+                            </div>
+                            <span class="checked-text">Handicap</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb3" checked>
-                            <label for="cb3">Pissoir</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch3"></label>
+                            </div>
+                            <span class="checked-text">Pissoir</span>
                         </li>
-                        <!--<li><a href="#">Vælg alle</a></li>-->
                         <li><div class="hr"></div></li>
 
                         <li class="heading">
                             Vælg område
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb4" checked>
-                            <label for="cb4">Odense</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked>
+                                <label class="onoffswitch-label" for="myonoffswitch4"></label>
+                            </div>
+                            <span class="checked-text">Odense</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb5">
-                            <label for="cb5">København</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch5">
+                                <label class="onoffswitch-label" for="myonoffswitch5"></label>
+                            </div>
+                            <span>København</span>
                         </li>
                         <li>
-                            <input type="checkbox" name="name" id="cb6">
-                            <label for="cb6">Aarhus</label>
+                            <div class="onoffswitch">
+                                <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch6">
+                                <label class="onoffswitch-label" for="myonoffswitch6"></label>
+                            </div>
+                            <span>Aarhus</span>
                         </li>
-                        <!--<li><a href="#">Vælg alle</a></li>-->
                         <li><div class="hr"></div></li>
                         <li class="heading">
                             Vælg radius
