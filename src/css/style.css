@@ -141,7 +141,7 @@ nav ul li .onoffswitch:hover + span {
 .hr {
     height: 1px;
     width: 100%;
-    background: grey;
+    background: lightgrey;
 }
 
 /* NAV BURGER */
