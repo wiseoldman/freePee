@@ -184,15 +184,15 @@ header .toggle-nav-mobile span:after {
 header .toggle-nav-mobile.is-open span:before {
     -webkit-transform-origin: center;
             transform-origin: center;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    top: 0;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    top: 2px;
 }
 
 header .toggle-nav-mobile.is-open span:after {
-    top: -2px;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    top: -1px;
+    -webkit-transform: rotate(-135deg);
+            transform: rotate(-135deg);
 }
 
 header .toggle-nav-mobile.is-open span {
