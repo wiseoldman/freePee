@@ -25,4 +25,11 @@ jQuery(document).ready(function($) {
             }
         }
     });
+
+    /*
+    ** ON/OFF SWITCH COLOR SPAN
+    */
+    $('.onoffswitch-checkbox').click(function () {
+        $(this).closest('li').toggleClass('active');
+    });
 });
