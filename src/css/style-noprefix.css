@@ -117,7 +117,7 @@ input[type="radio"] {
     right: 0px;
 }
 
-.checked-text {
+.active {
     color: #05b1be;
     font-weight: 700;
 }
@@ -125,25 +125,6 @@ input[type="radio"] {
 nav ul li .onoffswitch:hover + span {
     color: #05b1be;
 }
-
-/*
-input[type="checkbox"] + label,
-input[type="radio"] + label {
-    cursor: pointer;
-    width: 100%;
-    display: block;
-}
-
-input[type="checkbox"]:checked + label,
-input[type="radio"]:checked + label {
-    color: #05b1be;
-    font-weight: 700;
-}
-
-input[type="checkbox"] + label:hover,
-input[type="radio"] + label:hover {
-    color: #05b1be;
-}*/
 
 .hr {
     height: 1px;
