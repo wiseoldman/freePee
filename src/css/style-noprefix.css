@@ -168,13 +168,13 @@ header .toggle-nav-mobile span:after {
 
 header .toggle-nav-mobile.is-open span:before {
     transform-origin: center;
-    transform: rotate(45deg);
-    top: 0;
+    transform: rotate(135deg);
+    top: 2px;
 }
 
 header .toggle-nav-mobile.is-open span:after {
-    top: -2px;
-    transform: rotate(-45deg);
+    top: -1px;
+    transform: rotate(-135deg);
 }
 
 header .toggle-nav-mobile.is-open span {
