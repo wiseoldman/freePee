@@ -1,0 +1,42 @@
+{
+    "type": {
+        "heading": "Vælg toilet type",
+        "list": [
+            {
+                "name": "Toiletter",
+                "active": "active",
+                "checkboxId": "toilets"
+            },
+            {
+                "name": "Handicap",
+                "active": "active",
+                "checkboxId": "handicap"
+            },
+            {
+                "name": "Pissoir",
+                "active": "active",
+                "checkboxId": "pissoir"
+            }
+        ]
+    },
+    "area": {
+        "heading": "Vælg område",
+        "list": [
+            {
+                "name": "Odense",
+                "active": "active",
+                "checkboxId": "odense"
+            },
+            {
+                "name": "København",
+                "active": "",
+                "checkboxId": "kobenhavn"
+            },
+            {
+                "name": "Aarhus",
+                "active": "",
+                "checkboxId": "aarhus"
+            }
+        ]
+    }
+}
