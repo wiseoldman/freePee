@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="da" ng-app>
+<html lang="da" ng-app="myApp">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,8 +80,10 @@
                             Vælg radius
                         </li>
                         <li>
-                            <input class="slider" type="range" ng-model="sliderVal" value="2" min="1" max="10" style="width: 100%; margin-bottom: 20px">
-                            <span style="display: block">Radius: {{sliderVal}} km</span>
+                            <form ng-controller="SliderController">
+                                <input class="slider" type="range" name="range" ng-model="value" max="10" min="1">
+                                <span style="display: block">Radius: {{value}} km</span>
+                            </form>
                         </li>
                     </ul>
                 </nav>
