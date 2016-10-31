@@ -206,7 +206,7 @@ header .toggle-nav-mobile.is-open span {
 input[type=range].slider {
     -webkit-appearance: none;
     width: 100%;
-    margin: 5px 0;
+    margin-bottom: 18px;
 }
 input[type=range].slider:focus {
     outline: none;
