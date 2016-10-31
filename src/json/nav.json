@@ -1,7 +1,7 @@
 {
     "type": {
         "heading": "Vælg toilet type",
-        "list": [
+        "navArray": [
             {
                 "name": "Toiletter",
                 "active": "active",
@@ -21,7 +21,7 @@
     },
     "area": {
         "heading": "Vælg område",
-        "list": [
+        "navArray": [
             {
                 "name": "Odense",
                 "active": "active",
