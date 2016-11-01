@@ -18,25 +18,15 @@ body {
 }
 
 .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 100vh;
     width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
 }
 
 .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     height: 100%;
 }
 
@@ -101,7 +91,6 @@ input[type="radio"] {
     height: 12px; padding: 0; line-height: 12px;
     border: 2px solid #CCCCCC; border-radius: 12px;
     background-color: #FCFCFC;
-    -webkit-transition: background-color 0.3s ease-in;
     transition: background-color 0.3s ease-in;
 }
 
@@ -112,7 +101,6 @@ input[type="radio"] {
     position: absolute; top: 0; bottom: 0;
     right: 14px;
     border: 2px solid #CCCCCC; border-radius: 12px;
-    -webkit-transition: all 0.3s ease-in 0s;
     transition: all 0.3s ease-in 0s;
 }
 
@@ -151,9 +139,7 @@ header .toggle-nav-mobile {
     float: right;
     width: 30px;
     height: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     cursor: pointer;
 }
 
@@ -166,7 +152,6 @@ header .toggle-nav-mobile span:after {
     width: 100%;
     background-color: white;
     position: relative;
-    -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
@@ -182,17 +167,14 @@ header .toggle-nav-mobile span:after {
 /* X INSTEAD OF LINES */
 
 header .toggle-nav-mobile.is-open span:before {
-    -webkit-transform-origin: center;
-            transform-origin: center;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+    transform-origin: center;
+    transform: rotate(135deg);
     top: 2px;
 }
 
 header .toggle-nav-mobile.is-open span:after {
     top: -1px;
-    -webkit-transform: rotate(-135deg);
-            transform: rotate(-135deg);
+    transform: rotate(-135deg);
 }
 
 header .toggle-nav-mobile.is-open span {
@@ -214,8 +196,6 @@ header .toggle-nav-mobile.is-open span {
     }
 
     header .toggle-nav-mobile {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
     }
 
