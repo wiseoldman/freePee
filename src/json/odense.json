@@ -10,7 +10,7 @@
             "type": "Toilet",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-2",
@@ -20,7 +20,7 @@
             "type": "Toilet",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-3",
@@ -30,7 +30,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-4",
@@ -40,7 +40,7 @@
             "type": "Toilet",
             "opening_hours": "Hele dagen",
             "price": "5",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-5",
@@ -50,7 +50,7 @@
             "type": "Toilet",
             "opening_hours": "5:00-1:15",
             "price": "2",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-6",
@@ -60,7 +60,7 @@
             "type": "Pissoir",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-7",
@@ -70,7 +70,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "2",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-8",
@@ -80,7 +80,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "5",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-9",
@@ -90,7 +90,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "2",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-10",
@@ -100,7 +100,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-11",
@@ -110,7 +110,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "2",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-12",
@@ -120,7 +120,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "2",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-13",
@@ -130,7 +130,7 @@
             "type": "Pissoir",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-14",
@@ -140,7 +140,7 @@
             "type": "Pissoir",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-15",
@@ -150,7 +150,7 @@
             "type": "Toilet",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-16",
@@ -160,7 +160,7 @@
             "type": "Handicap",
             "opening_hours": "Hele dagen",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-17",
@@ -170,7 +170,7 @@
             "type": "Handicap",
             "opening_hours": "Lukket om natten",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         },
         {
             "id": "odense-18",
@@ -180,7 +180,7 @@
             "type": "Handicap",
             "opening_hours": "Lukket om natten",
             "price": "Gratis",
-            "postal_code": "5000",
+            "postal_code": "5000"
         }
     ]
 }

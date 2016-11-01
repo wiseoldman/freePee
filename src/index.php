@@ -7,8 +7,10 @@
         <title>freePee | pee for free</title>
 
         <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+        <script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places&key=AIzaSyByV3M4g0RhZsBNkT0thElXstagsDAZD8k"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+        <script src="https://rawgit.com/allenhwkim/angularjs-google-maps/master/build/scripts/ng-map.js"></script>
     </head>
     <body class="no-scroll">
         <!-- Page wrapper -->
@@ -88,7 +90,22 @@
                     </ul>
                 </nav>
                 <!-- Map -->
-                <div class="maps">
+                <div id="mapContainer" ng-controller="GetUserPositionController as userPosCtrl">
+                    <ng-map center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" class='map' ng-controller='MarkerController'>
+
+                          <marker class='marker' ng-repeat='marker in markers' position="[{{ marker.lat }}, {{ marker.lng }}]" on-click="map.showInfoWindow(event, 'foo')" />
+                          <info-window id="foo" max-width="300">
+                              <div ng-non-bindable>
+                                {{ marker.address }}<br>
+                                {{ marker.lat }}<br>
+                                {{ marker.lng }}
+                              </div>
+                            </info-window>
+
+                        <marker position="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
+                        <shape fill-color='#01b1be' fill-opacity='0.02' stroke-weight='0' id='circle' name="circle" radius="600" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" radius="4000" />
+
+                    </ng-map>
                 </div>
             </div>
         </div>
