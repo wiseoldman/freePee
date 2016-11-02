@@ -102,8 +102,7 @@
                         <!-- All markers -->
                         <marker id='{{toilet.id}}' position="[{{ toilet.lat }}, {{ toilet.lng }}]"
                             ng-repeat="toilet in vm.myMarkers"
-                            on-click="vm.showDetail(toilet)"
-                            icon="img/icons/{{ toilet.type }}.png">
+                            on-click="vm.showDetail(toilet)">
                         </marker>
 
                         <!-- Info window -->
