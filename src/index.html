@@ -90,13 +90,13 @@
                     </ul>
                 </nav>
                 <!-- Map -->
-                <div id="mapContainer" ng-controller="GetUserPositionController as userPosCtrl">
-                    <ng-map default-style="true" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" zoom="15" class="map" ng-controller="MarkerController as vm">
+                <div id="mapContainer">
+                    <ng-map default-style="true" center="current-position" zoom="15" class="map" ng-controller="MarkerController as vm">
                         <!-- Current position -->
-                        <marker position="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
+                        <marker position="current-position" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
                         </marker>
                         <div ng-controller="SliderController">
-                            <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="{{Slider.value}}" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" />
+                            <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="{{Slider.value}}" center="current-position" geo-fallback-center="[55.403,10.378]" />
                         </div>
 
                         <!-- All markers -->
