@@ -17,6 +17,25 @@ body {
     overflow: hidden;
 }
 
+/*
+** LOADER
+*/
+
+.loader {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    background: url('../img/loader/loader.gif') center no-repeat #05b1be;
+    overflow: hidden;
+}
+
+/*
+** CONTENT
+*/
+
 .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -332,15 +351,4 @@ span.uppercase::first-letter {
     header {
         text-align: left;
     }
-}
-
-/*
-** GOOGLE MAPS BG IMAGE (WILL BE REPLACED)
-*/
-
-.maps {
-    width: 100%;
-    background-image: url('../img/map2.png');
-    background-size: cover;
-    background-position: center center;
 }
