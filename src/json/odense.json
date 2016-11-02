@@ -1,0 +1,186 @@
+{
+    "city": "Odense",
+    "totaltoilets": 18,
+    "toilets": [
+        {
+            "id": "odense-1",
+            "lat": 55.408365,
+            "lng": 10.378135,
+            "address": "Østersøgade 8T",
+            "type": "toilet",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-2",
+            "lat": 55.407162,
+            "lng": 10.382829,
+            "address": "Gamle Havnekaj 1",
+            "type": "toilet",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-3",
+            "lat": 55.406912,
+            "lng": 10.383065,
+            "address": "Gamle Havnekaj 1",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-4",
+            "lat": 55.403351,
+            "lng": 10.387303,
+            "address": "Dannebrogsgade 5",
+            "type": "toilet",
+            "opening_hours": "Hele dagen",
+            "price": "5 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-5",
+            "lat": 55.402008,
+            "lng": 10.387170,
+            "address": "Dannebrogsgade 6B",
+            "type": "toilet",
+            "opening_hours": "5:00-1:15",
+            "price": "2 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-6",
+            "lat": 55.399277,
+            "lng": 10.388873,
+            "address": "Nørregade 49B",
+            "type": "pissoir",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-7",
+            "lat": 55.398192,
+            "lng": 10.385630,
+            "address": "Vindegade 28",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "2 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-8",
+            "lat": 55.398550,
+            "lng": 10.392826,
+            "address": "Sortebrødre Stræde 3T",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "5 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-9",
+            "lat": 55.396816,
+            "lng": 10.383850,
+            "address": "Slotsgade 16",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "2 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-10",
+            "lat": 55.396175,
+            "lng": 10.384682,
+            "address": "Store Gråbrødrestræde 10",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-11",
+            "lat": 55.396171,
+            "lng": 10.390063,
+            "address": "Albani Torv",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "2 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-12",
+            "lat": 55.394921,
+            "lng": 10.387119,
+            "address": "Klingenberg 14",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "2 kr.",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-13",
+            "lat": 55.396908,
+            "lng": 10.379873,
+            "address": "Grønnegade 21",
+            "type": "pissoir",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-14",
+            "lat": 55.394097,
+            "lng": 10.389806,
+            "address": "Eventyrhaven",
+            "type": "pissoir",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-15",
+            "lat": 55.392460,
+            "lng": 10.389366,
+            "address": "Nonnebakken 6",
+            "type": "toilet",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-16",
+            "lat": 55.392826,
+            "lng": 10.397016,
+            "address": "Benediktsgade 47",
+            "type": "handicap",
+            "opening_hours": "Hele dagen",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-17",
+            "lat": 55.391894,
+            "lng": 10.380446,
+            "address": "Filosofgangen 32Z",
+            "type": "handicap",
+            "opening_hours": "Lukket om natten",
+            "price": "Gratis",
+            "postal_code": "5000"
+        },
+        {
+            "id": "odense-18",
+            "lat": 55.391073,
+            "lng": 10.376089,
+            "address": "Kirkegårds Allé 2",
+            "type": "handicap",
+            "opening_hours": "Lukket om natten",
+            "price": "Gratis",
+            "postal_code": "5000"
+        }
+    ]
+}
