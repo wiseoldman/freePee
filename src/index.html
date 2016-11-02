@@ -90,33 +90,49 @@
                     </ul>
                 </nav>
                 <!-- Map -->
-                <div id="mapContainer">
-                    <ng-map default-style="true" center="current-position" zoom="15" class="map" ng-controller="MarkerController as vm">
-                        <!-- Current position -->
-                        <marker position="current-position" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
-                        </marker>
-                        <div ng-controller="SliderController">
-                            <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="{{Slider.value}}" center="current-position" geo-fallback-center="[55.403,10.378]" />
+                <ng-map
+                default-style="true"
+                center="current-position"
+                geo-fallback-center="[55.403,10.378]"
+                zoom="15"
+                class="map"
+                ng-controller="MarkerController as vm">
+                    <!-- Current position -->
+                    <marker
+                    position="current"
+                    icon="{
+                        path:'CIRCLE', scale: 7,
+                        fillColor: '#01b1be', fillOpacity: 1,
+                        strokeWeight: 2, strokeColor: '#fcfcfc'
+                    }">
+                    </marker>
+                    <div ng-controller="SliderController">
+                        <shape
+                        fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0'
+                        id='circle' name="circle"
+                        radius="{{Slider.value}}"
+                        center="current-position"
+                        geo-fallback-center="[55.403,10.378]"
+                        />
+                    </div>
+
+                    <!-- All markers -->
+                    <marker id='{{toilet.id}}' position="[{{ toilet.lat }}, {{ toilet.lng }}]"
+                        ng-repeat="toilet in vm.myMarkers"
+                        on-click="vm.showDetail(toilet)">
+                    </marker>
+
+                    <!-- Info window -->
+                    <info-window id="toilet-iw">
+                        <div ng-non-bindable="">
+                            <strong>Adresse: </strong>{{vm.toilet.address}}<br>
+                            <strong>Åbningstider: </strong>{{vm.toilet.opening_hours}}<br>
+                            <strong>Type: </strong><span class="uppercase">{{vm.toilet.type}}</span><br>
+                            <strong>Pris:</strong> {{vm.toilet.price}}<br><br>
+                            <a href="#">Vis vej hertil</a>
                         </div>
-
-                        <!-- All markers -->
-                        <marker id='{{toilet.id}}' position="[{{ toilet.lat }}, {{ toilet.lng }}]"
-                            ng-repeat="toilet in vm.myMarkers"
-                            on-click="vm.showDetail(toilet)">
-                        </marker>
-
-                        <!-- Info window -->
-                        <info-window id="toilet-iw">
-                            <div ng-non-bindable="">
-                                <strong>Adresse: </strong>{{vm.toilet.address}}<br>
-                                <strong>Åbningstider: </strong>{{vm.toilet.opening_hours}}<br>
-                                <strong>Type: </strong><span class="uppercase">{{vm.toilet.type}}</span><br>
-                                <strong>Pris:</strong> {{vm.toilet.price}}<br><br>
-                                <a href="#">Vis vej hertil</a>
-                            </div>
-                        </info-window>
-                    </ng-map>
-                </div>
+                    </info-window>
+                </ng-map>
             </div>
         </div>
 
