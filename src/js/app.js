@@ -1,9 +1,3 @@
-angular.module('ngMap').run(function($rootScope, NgMap) {
-  NgMap.getMap().then(function(map) {
-    $rootScope.map = map;
-  });
-});
-
 (function() {
     myApp = angular.module('myApp', ['ngMap']);
 
@@ -11,12 +5,27 @@ angular.module('ngMap').run(function($rootScope, NgMap) {
         $scope.value = 2;
     });
 
-    myApp.controller('MarkerController', function($scope,$http) {
+    myApp.controller('MarkerController', function(NgMap, $http) {
+        var vm = this;
         var url = "json/odense.json";
+        vm.myMarkers = [];
 
-        $http.get(url).success( function(response) {
-           $scope.markers = response.toilets;
+        NgMap.getMap().then(function(map) {
+            vm.map = map;
         });
+
+        $http.get(url).success(function(response) {
+            vm.myMarkers = response.toilets;
+        });
+
+        vm.showDetail = function(e, toilet) {
+            vm.toilet = toilet;
+            vm.map.showInfoWindow('toilet-iw', toilet.id);
+        };
+
+        vm.hideDetail = function() {
+            vm.map.hideInfoWindow('toilet-iw');
+        };
     });
 
     myApp.controller('GetUserPositionController', function($scope) {

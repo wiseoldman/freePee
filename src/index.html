@@ -91,20 +91,28 @@
                 </nav>
                 <!-- Map -->
                 <div id="mapContainer" ng-controller="GetUserPositionController as userPosCtrl">
-                    <ng-map center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" class='map' ng-controller='MarkerController'>
-
-                          <marker class='marker' ng-repeat='marker in markers' position="[{{ marker.lat }}, {{ marker.lng }}]" on-click="map.showInfoWindow(event, 'foo')" />
-                          <info-window id="foo" max-width="300">
-                              <div ng-non-bindable>
-                                {{ marker.address }}<br>
-                                {{ marker.lat }}<br>
-                                {{ marker.lng }}
-                              </div>
-                            </info-window>
-
+                    <ng-map default-style="true" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" zoom="15" class="map" ng-controller="MarkerController as vm">
+                        <!-- Current position -->
                         <marker position="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
-                        <shape fill-color='#01b1be' fill-opacity='0.02' stroke-weight='0' id='circle' name="circle" radius="600" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" radius="4000" />
+                        </marker>
+                        <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="600" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" radius="4000" />
 
+                        <!-- All markers -->
+                        <marker id='{{toilet.id}}' position="[{{ toilet.lat }}, {{ toilet.lng }}]"
+                            ng-repeat="toilet in vm.myMarkers"
+                            on-click="vm.showDetail(toilet)">
+                        </marker>
+
+                        <!-- Info window -->
+                        <info-window id="toilet-iw">
+                            <div ng-non-bindable="">
+                                <strong>Adresse: </strong>{{vm.toilet.address}}<br>
+                                <strong>Åbningstider: </strong>{{vm.toilet.opening_hours}}<br>
+                                <strong>Type: </strong><span class="uppercase">{{vm.toilet.type}}</span><br>
+                                <strong>Pris:</strong> {{vm.toilet.price}}<br><br>
+                                <a href="#">Vis vej hertil</a>
+                            </div>
+                        </info-window>
                     </ng-map>
                 </div>
             </div>
