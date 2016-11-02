@@ -42,12 +42,18 @@ body {
 
 header {
     background: #05b1be;
-    padding: 12px 18px;
+    padding: 6px 18px;
     color: white;
     font-family: 'Passion One', 'cursive';
     font-size: 1.9em;
     text-align: center;
     z-index: 200;
+}
+
+header img.logo {
+    display: inline-block;
+    height: 36px;
+    transform: translateY(5px);
 }
 
 nav {
@@ -151,6 +157,7 @@ header .toggle-nav-mobile {
     float: right;
     width: 30px;
     height: 30px;
+    margin-top: 4px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

@@ -17,7 +17,7 @@
         <div class="wrapper">
             <!-- Top header -->
             <header>
-                freePee
+                <img src="img/logo/logo-white.svg" class="logo" alt="logo" />
                 <!-- Nav-burger -->
                 <div class="toggle-nav-mobile">
                     <span></span>
@@ -83,8 +83,8 @@
                         </li>
                         <li>
                             <form ng-controller="SliderController">
-                                <input class="slider" type="range" name="range" ng-model="value" max="10" min="1">
-                                <span style="display: block">Radius: {{value}} km</span>
+                                <input class="slider" type="range" name="range" ng-model="Slider.value" max="1000" min="100" step="100">
+                                <span style="display: block">Radius: {{Slider.value}} m</span>
                             </form>
                         </li>
                     </ul>
@@ -95,7 +95,9 @@
                         <!-- Current position -->
                         <marker position="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" icon="{path:'CIRCLE', scale: 7, fillColor: '#01b1be', fillOpacity: 1, strokeWeight: 2, strokeColor: '#fcfcfc'}">
                         </marker>
-                        <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="600" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" radius="4000" />
+                        <div ng-controller="SliderController">
+                            <shape fill-color='#01b1be' fill-opacity='0.2' stroke-weight='0' id='circle' name="circle" radius="{{Slider.value}}" center="[{{position.toJSON('lat').lat}},{{position.toJSON('lng').lng}}]" />
+                        </div>
 
                         <!-- All markers -->
                         <marker id='{{toilet.id}}' position="[{{ toilet.lat }}, {{ toilet.lng }}]"
