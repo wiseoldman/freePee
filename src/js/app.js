@@ -1,8 +1,12 @@
 (function() {
     myApp = angular.module('myApp', ['ngMap']);
 
-    myApp.controller('SliderController', function($scope) {
-        $scope.value = 2;
+    myApp.factory('Slider', function(){
+        return { value: 400 };
+    });
+
+    myApp.controller('SliderController', function($scope, Slider) {
+        $scope.Slider = Slider;
     });
 
     myApp.controller('MarkerController', function(NgMap, $http) {
