@@ -1,6 +1,15 @@
 (function() {
     myApp = angular.module('myApp', ['ngMap']);
 
+    myApp.filter('capitalize', function() {
+        return function(input, scope) {
+            if (input != null) {
+                input = input.toLowerCase();
+                return input.substring(0,1).toUpperCase()+input.substring(1);
+            }
+        }
+    });
+
     myApp.factory('Slider', function(){
         return { value: 400 };
     });

@@ -124,10 +124,10 @@
 
                     <!-- Info window -->
                     <info-window id="toilet-iw">
-                        <div ng-non-bindable="" ng-cloak>
+                        <div ng-cloak>
                             <strong>Adresse: </strong>{{vm.toilet.address}}<br>
                             <strong>Åbningstider: </strong>{{vm.toilet.opening_hours}}<br>
-                            <strong>Type: </strong><span class="uppercase">{{vm.toilet.type}}</span><br>
+                            <strong>Type: </strong>{{vm.toilet.type | capitalize}}<br>
                             <strong>Pris:</strong> {{vm.toilet.price}}<br><br>
                             <a href="#">Vis vej hertil</a>
                         </div>
